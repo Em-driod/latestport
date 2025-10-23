@@ -15,7 +15,7 @@ const projects: Project[] = [
     summary: 'Composable UI primitives with accessibility baked in.',
     stack: ['TypeScript', 'React', 'Vite'],
     href: 'https://example.com/interface-kit',
-    image: '/smoke.png',
+    image: '/arther.png',
     imageBack: '/rac.jpg',
   },
   {
@@ -24,6 +24,8 @@ const projects: Project[] = [
     summary: 'Performance experiments and case studies for the web.',
     stack: ['Vite', 'React', 'Web Vitals'],
     href: 'https://example.com/perf-labs',
+     image: '/heritage.png',
+    imageBack: '/ferum.png',
   },
   {
     slug: 'dashboard-pro',
@@ -31,6 +33,8 @@ const projects: Project[] = [
     summary: 'Advanced analytics dashboard for business intelligence.',
     stack: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB'],
     href: 'https://example.com/dashboard-pro',
+     image: '/utar.png',
+    imageBack: '/foko.png',
   },
   {
     slug: 'ecommerce-hub',
@@ -38,6 +42,8 @@ const projects: Project[] = [
     summary: 'Full-featured e-commerce platform with payment integration.',
     stack: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
     href: 'https://example.com/ecommerce-hub',
+      image: '/sage.png',
+    imageBack: '/agba.png',
   },
   {
     slug: 'portfolio-creative',
@@ -45,6 +51,8 @@ const projects: Project[] = [
     summary: 'Personal portfolio site showcasing creative work and skills.',
     stack: ['React', 'Tailwind CSS', 'Framer Motion'],
     href: 'https://example.com/portfolio-creative',
+     image: '/zvaphone.png',
+    imageBack: '/zva.png',
   },
   {
     slug: 'blogify',
@@ -52,7 +60,10 @@ const projects: Project[] = [
     summary: 'Modern blogging platform with markdown and rich media support.',
     stack: ['Next.js', 'TypeScript', 'MongoDB'],
     href: 'https://example.com/blogify',
+     image: '/motor.png',
+    imageBack: '/motorphone.png',
   },
+  
   {
     slug: 'taskflow',
     title: 'TaskFlow',
