@@ -78,7 +78,7 @@ const projects: Project[] = [
     title: 'AI Vision',
     summary: 'AI-powered image recognition and dashboard analytics.',
     stack: ['Python', 'FastAPI', 'React', 'TensorFlow'],
-    href: 'https://example.com/ai-vision',
+    href: 'https://latestport-five.vercel.app/',
     image: '/shoephone.png',
     imageBack: '/shoe.png',
   },
