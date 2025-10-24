@@ -84,7 +84,7 @@ const handleScroll = useCallback((event: ScrollEvent) => {
                 src={images[currentImageIndex].src}
                 alt={images[currentImageIndex].label}
                 className="rounded-2xl object-cover shadow-lg"
-                style={{ width: '820px', height: '420px', maxWidth: '120vw', maxHeight: '70vh' }}
+                style={{ width: '920px', height: '420px',   }}
               />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 px-4 py-2 rounded-full text-white text-base font-semibold shadow-lg">
                 {images[currentImageIndex].label}

@@ -32,7 +32,7 @@ export default function Hero({
   }, []);
 
   // Animation transforms for desktop only
-  const rotY = useMemo(() => isMobile ? 0 : useTransform(scrollYProgress, [0.5, 1.14, 6], [0, 460, 480]), [isMobile, scrollYProgress]);
+  const rotY = useMemo(() => isMobile ? 0 : useTransform(scrollYProgress, [0.4, 1.14, 9], [0, 460, 480]), [isMobile, scrollYProgress]);
   const moveX = useMemo(() => isMobile ? 0 : useTransform(scrollYProgress, [0, 0.4, 0.6, 1], [-610, 150, 300, 350]), [isMobile, scrollYProgress]);
   const moveY = useMemo(() => isMobile ? 0 : useTransform(scrollYProgress, [0, 0.5, 1], [0, 180, 800]), [isMobile, scrollYProgress]);
   const scale = useMemo(() => isMobile ? 1 : useTransform(scrollYProgress, [0, 0.9, 2], [1, 0.9, 1]), [isMobile, scrollYProgress]);
@@ -69,7 +69,7 @@ export default function Hero({
   return (
     <section className="relative w-full lg:py-0 md:py-0 overflow-hidden" aria-label="Hero Section">
       {/* neon dot top-right */}
-      <span className="pointer-events-none absolute right-4 top-6 inline-flex h-3 w-3 rounded-full bg-lime-400 shadow-[0_0_24px_4px_rgba(163,230,53,0.6)]" aria-hidden="true" />
+      <span className="pointer-events-none absolute right-4 top-6 inline-flex h-3 w-3 rounded-full bg-green-400 shadow-[0_0_24px_4px_rgba(163,230,53,0.6)]" aria-hidden="true" />
 
       <motion.div
         variants={container}
@@ -224,12 +224,12 @@ export default function Hero({
               </p>
 
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-lime-400" tabIndex={0}>Core Skills</h3>
+                <h3 className="text-lg font-semibold mb-3 text-green-400" tabIndex={0}>Core Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {skillsList.map((skill: string, index: number) => (
                     <motion.span
                       key={skill}
-                      className="px-3 py-1 text-sm bg-neutral-800 text-neutral-200 rounded-full border border-neutral-700 hover:border-lime-400/50 transition-colors"
+                      className="px-3 py-1 text-sm bg-neutral-800 text-neutral-200 rounded-full border border-neutral-700 hover:border-green-400/50 transition-colors"
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: index * 0.1 + 0.5 }}
@@ -243,7 +243,7 @@ export default function Hero({
               </div>
 
               <motion.button
-                className="mt-6 px-6 py-3 bg-lime-400 text-neutral-900 font-semibold rounded-lg hover:bg-lime-300 transition-colors"
+                className="mt-6 px-6 py-3 bg-green-400 text-neutral-900 font-semibold rounded-lg hover:bg-green-300 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 tabIndex={0}

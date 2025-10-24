@@ -46,7 +46,7 @@ export default function Projects() {
     <Container>
       <div className="mx-auto max-w-7xl px-4">
         <header className="mb-12 text-center">
-          <p className="text-base text-lime-400 font-semibold tracking-wide mb-2">Elite Portfolio</p>
+          <p className="text-base text-green-400 font-semibold tracking-wide mb-2"> Portfolio</p>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-neutral-100 mb-4">Projects</h1>
           <p className="text-lg text-neutral-400">A curated selection of my best work, spanning full stack, frontend, dashboards, AI, and more.</p>
         </header>
@@ -62,7 +62,7 @@ export default function Projects() {
               href={p.href}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-3xl border-2 border-neutral-800 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 shadow-xl overflow-hidden hover:border-lime-400/60 transition-all duration-300 relative"
+              className="block rounded-3xl border-2 border-neutral-800 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 shadow-xl overflow-hidden hover:border-green-400/60 transition-all duration-300 relative"
               variants={item}
               whileHover="hover"
               initial="hidden"
@@ -82,7 +82,7 @@ export default function Projects() {
                   <div className="absolute inset-0 [backface-visibility:hidden]">
                     {/* Media */}
                     <div className="w-full aspect-[16/9]">
-                      <div className="relative w-full h-full overflow-hidden bg-gradient-to-tr from-lime-400/10 via-neutral-800 to-neutral-700 flex items-center justify-center">
+                      <div className="relative w-full h-full overflow-hidden bg-gradient-to-tr from-green-400/10 via-neutral-800 to-neutral-700 flex items-center justify-center">
                         {p.image ? (
                           <motion.img
                             src={p.image}
@@ -94,7 +94,7 @@ export default function Projects() {
                           />
                         ) : (
                           <>
-                            <span className="text-5xl text-lime-400/40 font-black">{p.title[0]}</span>
+                            <span className="text-5xl text-green-400/40 font-black">{p.title[0]}</span>
                           </>
                         )}
                       </div>
@@ -103,7 +103,7 @@ export default function Projects() {
                     <div className="p-6">
                       <div className="flex items-center gap-2 mb-2">
                         <motion.span 
-                          className="inline-block text-xs px-3 py-1 rounded-full border border-lime-400/40 bg-neutral-900 text-lime-300 font-bold"
+                          className="inline-block text-xs px-3 py-1 rounded-full border border-green-400/40 bg-neutral-900 text-green-300 font-bold"
                           whileHover={{ scale: 1.05, backgroundColor: 'rgba(163, 230, 53, 0.1)' }}
                           transition={{ type: 'spring', stiffness: 300 }}
                         >
@@ -130,7 +130,7 @@ export default function Projects() {
                       </div>
                       <div className="mt-6 flex justify-end">
                         <motion.span 
-                          className="text-lime-400 font-semibold text-sm flex items-center gap-1"
+                          className="text-green-400 font-semibold text-sm flex items-center gap-1"
                           initial={{ x: 0 }}
                           whileHover={{ x: 5 }}
                           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
@@ -172,7 +172,7 @@ export default function Projects() {
                           ))}
                         </div>
                         <div className="mt-3 flex justify-end">
-                          <span className="text-lime-300 font-semibold text-xs flex items-center gap-1">Open →</span>
+                          <span className="text-green-300 font-semibold text-xs flex items-center gap-1">Open →</span>
                         </div>
                       </div>
                     </div>

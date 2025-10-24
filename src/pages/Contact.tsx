@@ -133,7 +133,7 @@ const ContactForm: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
           <input
             value={form.name}
             onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
-            className="mt-1 rounded border border-slate-700/40 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-500"
+            className="mt-1 rounded border border-slate-700/40 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-400"
             placeholder="Your name"
             aria-invalid={!!errors.name}
           />
@@ -145,7 +145,7 @@ const ContactForm: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
           <input
             value={form.email}
             onChange={(e) => setForm((p) => ({ ...p, email: e.target.value }))}
-            className="mt-1 rounded border border-slate-700/40 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-500"
+            className="mt-1 rounded border border-slate-700/40 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-400"
             placeholder="you@example.com"
             aria-invalid={!!errors.email}
           />
@@ -158,7 +158,7 @@ const ContactForm: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
         <textarea
           value={form.message}
           onChange={(e) => setForm((p) => ({ ...p, message: e.target.value }))}
-          className="mt-1 min-h-[110px] rounded border border-slate-700/40 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-500"
+          className="mt-1 min-h-[110px] rounded border border-slate-700/40 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-400"
           placeholder="Tell me about your project, budget, timeline..."
           aria-invalid={!!errors.message}
         />
@@ -169,7 +169,7 @@ const ContactForm: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center gap-2 rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold hover:brightness-95 transition"
+          className="inline-flex items-center gap-2 rounded-md bg-green-400 px-4 py-2 text-sm font-semibold hover:brightness-95 transition"
         >
           {loading ? "Sending..." : "Send Message"}
         </button>
@@ -207,7 +207,7 @@ const DraggableContactCard: React.FC = () => {
       className="rounded-2xl border border-slate-700/60 bg-gradient-to-br from-black to-black p-4 shadow-2xl"
     >
       <div className="flex items-start gap-3">
-        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-slate-900 font-bold">
+        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-slate-900 font-bold">
           EM
         </div>
         <div className="flex-1">
@@ -249,7 +249,7 @@ const DraggableCapsule: React.FC<{ onReveal: () => void; revealed: boolean }> = 
     >
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-3">
-          <div className="rounded-full bg-emerald-500/20 px-2 py-1 text-sm">📲</div>
+          <div className="rounded-full bg-green-500/20 px-2 py-1 text-sm">📲</div>
           <div className="text-sm font-medium">Contact Capsule</div>
         </div>
 
@@ -318,7 +318,7 @@ const SuccessModal: React.FC<{ open: boolean; onClose: () => void }> = ({ open, 
             <div className="mt-6 flex justify-end">
               <button
                 onClick={onClose}
-                className="rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold hover:brightness-95"
+                className="rounded-md bg-green-400 px-4 py-2 text-sm font-semibold hover:brightness-95"
               >
                 Close
               </button>
@@ -458,7 +458,7 @@ export default function Contact(): JSX.Element {
 
                     <div className="mt-4 text-slate-300">
                       <p className="leading-relaxed">
-                        I drive projects from sketch to production. If you need performance, motion, or a prototype that sells — message me below or open WhatsApp for an instant chat.
+                        I drive projects from sketch to production. If you need performance, motion, or a prototype that sells — message me below .
                       </p>
                     </div>
 
@@ -630,7 +630,7 @@ export default function Contact(): JSX.Element {
                     </a>
                     <button
                       onClick={() => setModalOpen(true)}
-                      className="mt-2 rounded-md bg-emerald-600 px-3 py-2 text-sm font-semibold"
+                      className="mt-2 rounded-md bg-green-400 px-3 py-2 text-sm font-semibold"
                     >
                       🎯 Book a quick call
                     </button>
