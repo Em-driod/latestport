@@ -1,5 +1,5 @@
 import { motion, Variants } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+
 import Container from '../components/Container';
 import projects from '../data/projects';
 
