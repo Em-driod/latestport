@@ -1,10 +1,10 @@
 // A list of image URLs for the festival campaign
 const images = [
-  { src: '/rac.jpg', label: 'Festival Crowd' },
-  { src: '/emma.png', label: 'Designer Portrait' },
-  { src: '/rac.jpg', label: 'Main Stage' },
-  { src: '/rac.jpg', label: 'Night Lights' },
-  { src: '/emma.png', label: 'VIP Area' },
+  { src: '/zvaphone.png', label: 'Festival Crowd' },
+  { src: '/agba.png', label: 'Designer Portrait' },
+  { src: '/arther.png', label: 'Main Stage' },
+  { src: '/ferum.png', label: 'Night Lights' },
+  { src: '/zvaphone.png', label: 'VIP Area' },
 ];
 
 import { useState, useRef, useCallback, useEffect } from 'react';

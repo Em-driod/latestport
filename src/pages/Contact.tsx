@@ -404,7 +404,7 @@ export default function Contact(): JSX.Element {
       <FloatingCursor />
 
       <Container>
-        <div className="mx-auto max-w-6xl py-20">
+        <div className=" lg:w-[1200px] sm:[200px] py-20">
           <motion.header initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">Contact me ✨</h1>
             <p className="mt-2 text-slate-300 max-w-3xl">
